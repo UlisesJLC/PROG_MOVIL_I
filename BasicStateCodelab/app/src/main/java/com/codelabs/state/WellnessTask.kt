@@ -21,8 +21,8 @@ import androidx.compose.runtime.setValue
 
 class WellnessTask(
     val id: Int,
-    val label: String,
-    initialChecked: Boolean = false
+    val label: String
+
 ) {
-    var checked: Boolean by mutableStateOf(initialChecked)
+
 }
