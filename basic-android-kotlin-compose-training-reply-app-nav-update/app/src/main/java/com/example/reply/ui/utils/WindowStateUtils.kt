@@ -1,5 +1,5 @@
 /*
- * Copyright 2022 The Android Open Source Project
+ * Copyright (C) 2023 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,15 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.codelabs.state
+package com.example.reply.ui.utils
 
-import StatefulCounter
-import WaterCounter
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-
-@Composable
-fun WellnessScreen(modifier: Modifier = Modifier) {
-    StatefulCounter(modifier)
-    WellnessTasksList()
+/**
+ * Different type of navigation supported by app depending on size and state.
+ */
+enum class ReplyNavigationType {
+    BOTTOM_NAVIGATION, NAVIGATION_RAIL, PERMANENT_NAVIGATION_DRAWER
 }
